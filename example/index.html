@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>unocss-preset-openchamber</title>
+<link rel="stylesheet" href="uno.css">
+</head>
+<body class="p-6">
+  <div class="max-w-2xl">
+    <h2 class="oc-section-title mb-4">密度与字体</h2>
+
+    <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-2">
+        <p class="oc-label">界面字体</p>
+        <div class="flex items-center gap-2">
+          <button class="oc-trigger min-w-26">Inter</button>
+          <button class="oc-btn oc-btn-icon oc-btn-ghost" aria-label="重置">↻</button>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <p class="oc-label">界面字体大小</p>
+        <div class="flex items-center gap-2">
+          <div class="oc-stepper">
+            <button class="oc-stepper-btn">−</button>
+            <span class="oc-stepper-value">100</span>
+            <button class="oc-stepper-btn">+</button>
+          </div>
+          <span class="oc-unit">%</span>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <p class="oc-label">界面字重</p>
+        <div class="oc-seg self-start">
+          <button class="oc-seg-item-active">常规</button>
+          <button class="oc-seg-item">均衡</button>
+          <button class="oc-seg-item">加强</button>
+        </div>
+      </div>
+
+      <div class="oc-tile rounded-lg p-3 flex flex-col gap-2">
+        <div class="oc-group-title">Session totals</div>
+        <div class="flex gap-2">
+          <div class="oc-tile-inset rounded-md px-3 py-2 flex-1"><div class="text-section">13.7M</div><div class="oc-meta">tokens</div></div>
+          <div class="oc-tile-inset rounded-md px-3 py-2 flex-1"><div class="text-section">42</div><div class="oc-meta">turns</div></div>
+        </div>
+      </div>
+
+      <div class="flex gap-2 pt-2">
+        <button class="oc-btn-primary">Primary</button>
+        <button class="oc-btn-default">Default</button>
+        <button class="oc-btn-ghost">Ghost</button>
+        <button class="oc-btn-destructive">Destructive</button>
+      </div>
+
+      <input class="oc-field" placeholder="oc-field — 32px / r7">
+    </div>
+
+    <p class="oc-meta mt-6">切换主题：给 &lt;html&gt; 加 data-theme="vercel-light" 即可，无需重编译。</p>
+  </div>
+</body>
+</html>
